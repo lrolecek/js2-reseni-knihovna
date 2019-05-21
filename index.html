@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Knihovna</title>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+  <h1>Knihovna</h1>
+
+  <div class="controls">
+    <button id="allbooks"><i class="fas fa-book"></i> Všechny knihy</button>
+    <button id="unreadbooks"><i class="far fa-bookmark"></i> Nepřečtené knihy</button>
+    <button id="readbooks"><i class="fas fa-bookmark"></i> Přečtené knihy</button>
+    <button id="next"><i class="fas fa-book-open"></i> Začíst číst další knihu</button>
+    <button id="finish"><i class="fas fa-check"></i> Dočíst aktuální knihu</button>
+  </div>
+
+  <div class="status">
+    <p>V knihovně je celkem <strong id="count">0</strong> knih, z toho <strong id="unread">0</strong> nepřečtených.</p>
+    <p>Poslední přečtená kniha:<strong id="last"></strong></p>
+  </div>
+
+  <div class="booklist" id="booklist"></div>
+
+  <!--
+    Složka /dist a soubor app.bundle.js v prázdném projektu
+    zatím neexistují. Vytvoří se automaticky ze zdrojových
+    souborů uvnitř složky /src po spuštění Webpacku.
+    Návod najdeš v souboru README.md
+  -->
+  <script src="dist/app.bundle.js"></script>
+
+</body>
+</html>
